@@ -152,6 +152,11 @@
             bindings = <&kp DEL>;
             key-positions = <34 14>;
         };
+
+        rep {
+            bindings = <&key_repeat>;
+            key-positions = <34 37>;
+        };
     };
 
 macros {
