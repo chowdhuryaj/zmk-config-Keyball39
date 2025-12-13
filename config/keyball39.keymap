@@ -269,7 +269,7 @@ macros {
 &mt LALT B      &kp F           &kp L         &kp K      &kp Q                         &kp G    &kp Y      &kp O       &kp U        &kp P
 &mt LGUI N      &kp S           &kp H         &kp T      &kp M                         &kp W    &kp C      &kp I       &kp A        &kp E
 &mt LSHFT X     &kp V           &kp J         &kp D      &kp Z                         &kp SEMI &kp DOWN   &kp LEFT    &kp RIGHT    &kp UP
-&mt LCTRL COMMA &kp PERIOD      &kp SLASH     &lt 6 BSPC &lt 5 R &mt LSHFT SPACE       &lt 1 DEL   &lt 2 A                          &mo SQT
+&mt LCTRL COMMA &kp PERIOD      &kp SLASH     &lt 6 BSPC &lt 5 R &mt LSHFT SPACE       &lt 1 DEL   &lt 2 ENTER                      &kp SQT
             >;
         };
 
