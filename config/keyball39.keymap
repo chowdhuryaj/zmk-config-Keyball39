@@ -24,6 +24,13 @@
     quick-tap-ms = <150>;
 };
 
+&caps_word { continue-list = <UNDERSCORE MINUS>; };
+
+/ {
+
+    behaviors {
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -246,42 +253,6 @@
             bindings = <&kp HASH>;
             key-positions = <4 3 2>;
         };
-    };
-
-&caps_word { continue-list = <UNDERSCORE MINUS>; };
-
-/ {
-    // custom shift using mod-morph 
-
-    behaviors {
-        cmqus: comma_question {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_QUESTION";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QUESTION>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dtsmi: dot_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_SEMI";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp SEMI>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    slash_or_paren: slash_or_paren {
-        label = "SLASH_OR_PAREN";
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <2>;
-
-        flavor = "tap-preferred";
-        tapping-term-ms = <220>;
-        quick-tap-ms = <150>;
-
-        bindings = <&paren_in>, <&kp>;
-    };
     };
 
 macros {
