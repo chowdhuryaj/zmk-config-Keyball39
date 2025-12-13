@@ -82,7 +82,7 @@ macros {
 &mt LALT B      &kp F         &kp L     &kp K         &kp Q                                    &kp P       &kp Y  &kp O      &kp U    &kp SQT
 &mt LGUI N      &kp S         &kp H     &kp T         &kp M                                    &kp W       &kp C  &kp I     &kp UP    &kp SEMICOLON
 &mt LSHFT X     &kp V         &kp J     &kp D         &kp Z                                    &paren_in   &kp G  &kp LEFT  &kp DOWN  &kp RIGHT
-&mt LCTRL COMMA &mt SEMI PERIOD &slash_or_paren 0 SLASH     &lt 6 BSPC    &lt 4 SPACE    &lt 5 R &lt 1 A  &lt 2 E                     &kp RSHFT
+&mt LCTRL COMMA &mt SEMI PERIOD &slash_or_paren 0 SLASH     &lt 6 BSPC    &lt 4 SPACE    &lt 5 R &lt 1 A  &lt 2 E                     &MO 3
             >;
         };
 
@@ -91,7 +91,7 @@ macros {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT        &none              &none         &none         &trans        &trans        &none
+&kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT        &none              &none      &kp LSHFT     &kp LGUI      &kp LALT      &kp LCTRL
 &trans        &trans         &trans    &trans   &trans             &trans  &trans  &trans                                          &trans
             >;
         };
@@ -109,9 +109,9 @@ macros {
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &none                   &none   &none  &none  &none  &none
-&kp F5  &kp F6   &kp F7   &kp F8   &none                   &none   &none  &none  &none  &none
-&kp F9  &kp F10  &kp F11  &kp F12  &none                   &none   &none  &none  &none  &none
+&kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP            &kp C_BRI_UP   &studio_unlock  &sys_reset  &bootloader  &none
+&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN            &kp C_BRI_DN   &BT_CLR         &none       &none        &none
+&kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE              &kp C_PP       &EP_TOG         &none       &none        &none
 &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
             >;
         };
