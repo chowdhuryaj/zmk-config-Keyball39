@@ -26,20 +26,20 @@ layers:
   - J
   - D
   - Z
-  - '&mkp MB3'
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - {t: ;, s: ':'}
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-up-bold$$
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
-  - {t: ., h: ;}
-  - {t: /, h: '''', s: '?'}
+  - .
+  - {t: /, s: '?'}
   - {t: '$$mdi:backspace$$', h: SNIPE}
   - {t: R, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: NUM, h: toggle}
-  - {t: SYM, h: toggle}
-  - FUN
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '''', s: '"'}
   NUM:
   - '1'
   - '2'
@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
   - F1
@@ -159,7 +159,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
