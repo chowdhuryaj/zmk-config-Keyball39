@@ -19,7 +19,7 @@
 };
 
 &mt {
-    tapping-term-ms = <1900>;
+    tapping-term-ms = <190>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
 };
@@ -47,21 +47,42 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+    slash_or_paren: slash_or_paren {
+        label = "SLASH_OR_PAREN";
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+
+        flavor = "tap-preferred";
+        tapping-term-ms = <220>;
+        quick-tap-ms = <150>;
+
+        bindings = <&paren_in>, <&kp>;
+    };
     };
 
-    macros {
-    };
+macros {
+    paren_in {
+        label = "PAREN_IN";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
 
+        bindings = <
+            &kp LEFT_PARENTHESIS
+            &kp RIGHT_PARENTHESIS
+            &kp LEFT
+        >;
+    };
+};
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B      &kp F         &kp L     &kp K         &kp Q                                    &kp P            &kp Y  &kp I      &kp O    &kp U
+&mt LALT B      &kp F         &kp L     &kp K         &kp Q                                    &kp P            &kp Y  &kp O      &kp U    &kp SQT
 &mt LGUI N      &kp S         &kp H     &kp T         &kp M                                    &kp W            &kp C  &kp I      &kp UP    &kp SQT
 &mt LSHFT X     &kp V         &kp J     &kp D         &kp Z                                    &kp G            &kp G  &kp LEFT  &kp DOWN  &kp RIGHT
-&mt LCTRL SLASH &cmqus        &dtsmi    &lt 6 BSPC    &lt 4 SPACE  &lt 5 R        &lt 1 A  &lt 2 E                                         &kp RSHFT
+&mt LCTRL COMMA &mt SEMI PERIOD &slash_or_paren 0 SLASH     &lt 6 BSPC    &lt 4 SPACE  &lt 5 R        &lt 1 A  &lt 2 E                                         &kp RSHFT
             >;
         };
 
