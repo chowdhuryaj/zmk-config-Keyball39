@@ -25,10 +25,6 @@
 };
 
 / {
-
-    behaviors {
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -50,16 +46,6 @@
         backtab {
             bindings = <&kp LS(TAB)>;
             key-positions = <10 11>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <6 7 8>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <7 8 9>;
         };
 
         pg_up {
@@ -107,49 +93,9 @@
             key-positions = <34 12>;
         };
 
-        period {
-            bindings = <&kp PERIOD>;
-            key-positions = <18 19>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <18 19 16>;
-        };
-
-        semicolon {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <18 16 17>;
-        };
-
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <18 17>;
-        };
-
-        apos {
-            bindings = <&kp APOS>;
-            key-positions = <7 18>;
-        };
-
-        dqt {
-            bindings = <&kp DQT>;
-            key-positions = <6 18>;
-        };
-
-        underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <25 26>;
-        };
-
         minus {
             bindings = <&kp MINUS>;
             key-positions = <16 15>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <16 15 17>;
         };
 
         eq {
@@ -177,46 +123,6 @@
             key-positions = <36 17>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <26 17 8>;
-        };
-
-        bslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <6 17 28>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <16 7 18>;
-        };
-
-        less {
-            bindings = <&kp LT>;
-            key-positions = <7 16>;
-        };
-
-        more {
-            bindings = <&kp GT>;
-            key-positions = <6 17>;
-        };
-
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <16 9>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <16 5>;
-        };
-
-        percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <6 28>;
-        };
-
         exclamation {
             bindings = <&kp EXCL>;
             key-positions = <1 2 13>;
@@ -224,37 +130,32 @@
 
         question {
             bindings = <&kp QMARK>;
-            key-positions = <11 12 3>;
-        };
-
-        money {
-            bindings = <&kp DOLLAR>;
-            key-positions = <22 21 3>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <4 13 12>;
-        };
-
-        and {
-            bindings = <&kp AMPS>;
-            key-positions = <14 12>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <24 23 22>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
-            key-positions = <4 3 2>;
+            key-positions = <16 7 8>;
         };
 
         scroll {
             bindings = <&tog 5>;
             key-positions = <26 37 27>;
+        };
+
+        num {
+            bindings = <&tog 1>;
+            key-positions = <33 23>;
+        };
+
+        sym {
+            bindings = <&tog 2>;
+            key-positions = <33 23 22>;
+        };
+
+        fn {
+            bindings = <&tog 3>;
+            key-positions = <21 22 23 33>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <34 14>;
         };
     };
 
@@ -266,10 +167,10 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B      &kp F           &kp L         &kp K      &kp Q                         &kp G      &kp Y      &kp O       &kp U        &kp P
-&mt LGUI N      &kp S           &kp H         &kp T      &kp M                         &kp W      &kp C      &kp I       &kp A        &kp E
-&mt LSHFT X     &kp V           &kp J         &kp D      &kp Z                         &lt 4 SEMI &kp DOWN   &kp LEFT    &kp RIGHT    &kp UP
-&mt LCTRL COMMA &kp PERIOD      &kp SLASH     &lt 6 BSPC &mt LSHFT SPACE &lt 5 R       &lt 1 DEL  &lt 2 ENTER                         &kp SQT
+&mt LALT B    &kp F           &kp L         &kp K      &kp Q                         &kp G      &kp Y      &kp O       &kp U        &kp P
+&mt LGUI N    &kp S           &kp H         &kp T      &kp M                         &kp W      &kp C      &kp I       &kp A        &kp E
+&mt LCTRL X   &kp V           &kp J         &kp D      &kp Z                         &kp SEMI &kp COMMA  &kp PERIOD  &kp SLASH    &kp SQT
+&sk LSHFT     &kp DEL         &kp BSPC      &lt 6 UP   &lt 4 R &lt 5 DOWN   &lt 1 LEFT  &lt 2 RIGHT                         &kp RSHFT
             >;
         };
 
