@@ -280,3 +280,92 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [11, 10, 12]
+  k: $$mdi:keyboard-esc$$
+- p: [11, 12, 13]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [11, 12]
+  k: $$mdi:keyboard-tab$$
+- p: [10, 11]
+  k: $$mdi:keyboard-tab-reverse$$
+- p: [6, 7, 8]
+  k: HOME
+- p: [7, 8, 9]
+  k: END
+- p: [15, 18]
+  k: PG UP
+- p: [25, 28]
+  k: PG DN
+- p: [26, 27]
+  k: '&mkp MB1'
+- p: [26, 28]
+  k: '&mkp MB2'
+- p: [26, 28, 27]
+  k: $$mdi:mouse-scroll-wheel$$
+- p: [26, 25]
+  k: '&mkp MB4'
+- p: [26, 27]
+  k: '&mkp MB5'
+- p: [34, 13]
+  k: $$mdi:keyboard-space$$
+- p: [34, 12]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [18, 19]
+  k: .
+- p: [18, 19, 16]
+  k: ':'
+- p: [18, 16, 17]
+  k: {t: ;, s: ':'}
+- p: [18, 17]
+  k: {t: ',', s: <}
+- p: [7, 18]
+  k: .
+- p: [6, 18]
+  k: '"'
+- p: [25, 26]
+  k: _
+- p: [16, 15]
+  k: {t: '-', s: _}
+- p: [16, 15, 17]
+  k: +
+- p: [5, 6]
+  k: {t: '=', s: +}
+- p: [36, 6]
+  k: {t: '[', s: '{'}
+- p: [36, 7]
+  k: {t: ']', s: '}'}
+- p: [36, 16]
+  k: (
+- p: [36, 17]
+  k: )
+- p: [26, 17, 8]
+  k: {t: /, s: '?'}
+- p: [6, 17, 28]
+  k: {t: \, s: '|'}
+- p: [16, 7, 18]
+  k: ^
+- p: [7, 16]
+  k: <
+- p: [6, 17]
+  k: '>'
+- p: [16, 9]
+  k: '~'
+- p: [16, 5]
+  k: {t: '`', s: '~'}
+- p: [6, 28]
+  k: '%'
+- p: [1, 2, 13]
+  k: '!'
+- p: [11, 12, 3]
+  k: '?'
+- p: [22, 21, 3]
+  k: $
+- p: [4, 13, 12]
+  k: '@'
+- p: [14, 12]
+  k: '&'
+- p: [24, 23, 22]
+  k: '*'
+- p: [4, 3, 2]
+  k: '#'
