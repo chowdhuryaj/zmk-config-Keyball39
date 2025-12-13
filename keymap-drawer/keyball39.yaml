@@ -147,7 +147,7 @@ layers:
   - F12
   - $$mdi:volume-off$$
   - $$mdi:play-pause$$
-  - '&EP_TOG'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
