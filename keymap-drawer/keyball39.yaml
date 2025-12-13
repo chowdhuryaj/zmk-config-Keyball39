@@ -26,7 +26,7 @@ layers:
   - J
   - D
   - Z
-  - {t: ;, s: ':'}
+  - {t: ;, h: MOUSE, s: ':'}
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
@@ -35,8 +35,8 @@ layers:
   - .
   - {t: /, s: '?'}
   - {t: '$$mdi:backspace$$', h: SNIPE}
-  - {t: R, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&LT 5 R'
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
   - {t: '''', s: '"'}
@@ -186,7 +186,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgDn
+  - {t: PgDn, type: held}
   - '&mkp MB4'
   - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -235,7 +235,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
