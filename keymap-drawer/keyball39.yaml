@@ -6,24 +6,24 @@ layers:
   - L
   - K
   - P
-  - X
+  - G
   - Y
   - O
   - U
-  - Q
-  - A
+  - P
+  - N
   - S
   - H
   - T
   - M
-  - '&key_repeat'
+  - W
+  - C
   - I
   - E
   - A
-  - G
-  - J
-  - C
+  - X
   - V
+  - J
   - D
   - Z
   - {t: ;, s: ':'}
@@ -31,14 +31,14 @@ layers:
   - .
   - {t: /, s: '?'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: SNIPE, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: SCROLL, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: E, h: LGUI}
-  - {t: R, h: '$$mdi:arrow-up-bold$$'}
-  - {t: '$$mdi:arrow-down-bold$$', h: SCROLL}
-  - {t: N, h: '$$mdi:arrow-left-bold$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:arrow-right-bold$$'}
+  - {t: '$$mdi:backspace$$', h: LGUI}
+  - {t: SPC, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: SYM}
   - {t: MOUSE, h: toggle}
   NUM:
   - '1'
@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
   - F1
@@ -232,11 +232,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -271,7 +271,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -335,7 +335,7 @@ combos:
   k: '&key_repeat'
 - p: [33, 23, 22, 21, 20]
   k: {t: MOUSE, h: toggle}
-- p: [33, 23, 22, 21, 20]
+- p: [33, 11]
   k: {t: SCROLL, h: toggle}
 - p: [33, 10]
   k: {t: SNIPE, h: toggle}
