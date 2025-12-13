@@ -261,10 +261,10 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B      &kp F           &kp L         &kp K         &kp Q                         &kp G   &kp Y      &kp O       &kp U        &kp P
-&mt LGUI N      &kp S           &kp H         &kp T         &kp M                         &kp W   &mkp LCLK  &mkp MCLK   &mkp RCLK    &mo 5
-&mt LSHFT X     &kp V           &kp J         &kp D         &kp Z                         &kp C   &kp I      &mkp MB4    &mkp MB5     &mo 6
-&mt LCTRL COMMA &mt SEMI PERIOD &mt SQT SLASH &lt 6 BSPC    &lt 5 SPACE &lt 4 R  &lt 1 A  &lt 2 E                                     &mo 3
+&mt LALT B      &kp F           &kp L         &kp K      &kp Q                         &kp G    &kp Y      &kp O       &kp U        &kp P
+&mt LGUI N      &kp S           &kp H         &kp T      &kp M                         &kp W    &kp C      &kp I       &kp A        &kp E
+&mt LSHFT X     &kp V           &kp J         &kp D      &kp Z                         &mkp MB3 &mkp MB1   &mkp MB2    &mkp MB4     &mkp MB5
+&mt LCTRL COMMA &mt SEMI PERIOD &mt SQT SLASH &lt 6 BSPC &lt 5 R &mt LSHFT SPACE       &lt 1  &lt 2                                 &mo 3
             >;
         };
 
