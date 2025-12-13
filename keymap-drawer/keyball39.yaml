@@ -32,11 +32,11 @@ layers:
   - {t: /, s: '?'}
   - {t: '''', s: '"'}
   - SNIPE
-  - SCROLL
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:backspace$$', h: LGUI}
   - {t: SPC, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: SCROLL}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:backspace-reverse-outline$$', h: SYM}
   - MOUSE
@@ -232,11 +232,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
@@ -293,16 +293,6 @@ combos:
   k: PG UP
 - p: [25, 28]
   k: PG DN
-- p: [26, 27]
-  k: '&mkp MB1'
-- p: [26, 28]
-  k: '&mkp MB2'
-- p: [26, 28, 27]
-  k: $$mdi:mouse-scroll-wheel$$
-- p: [26, 25]
-  k: '&mkp MB4'
-- p: [26, 27]
-  k: '&mkp MB5'
 - p: [34, 13]
   k: $$mdi:keyboard-space$$
 - p: [34, 12]
