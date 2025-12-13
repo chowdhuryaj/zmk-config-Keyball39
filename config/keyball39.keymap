@@ -24,6 +24,230 @@
     quick-tap-ms = <150>;
 };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <11 10 12>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <11 12 13>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        backtab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <10 11>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <6 7 8>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <7 8 9>;
+        };
+
+        pg_up {
+            bindings = <&kp PG_UP>;
+            key-positions = <15 18>;
+        };
+
+        pg_dn {
+            bindings = <&kp PG_DN>;
+            key-positions = <25 28>;
+        };
+
+        lmb {
+            bindings = <&mkp MB1>;
+            key-positions = <26 27>;
+        };
+
+        rmb {
+            bindings = <&mkp MB2>;
+            key-positions = <26 28>;
+        };
+
+        mb3 {
+            bindings = <&mkp MCLK>;
+            key-positions = <26 28 27>;
+        };
+
+        mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <26 25>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <26 27>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <34 13>;
+        };
+
+        bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <34 12>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <18 19>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <18 19 16>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <18 16 17>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <18 17>;
+        };
+
+        apos {
+            bindings = <&kp APOS>;
+            key-positions = <7 18>;
+        };
+
+        dqt {
+            bindings = <&kp DQT>;
+            key-positions = <6 18>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <25 26>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <16 15>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <16 15 17>;
+        };
+
+        eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <5 6>;
+        };
+
+        lbrac {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <36 6>;
+        };
+
+        rbrac {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <36 7>;
+        };
+
+        lparen {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <36 16>;
+        };
+
+        rparen {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <36 17>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <26 17 8>;
+        };
+
+        bslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <6 17 28>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <16 7 18>;
+        };
+
+        less {
+            bindings = <&kp LT>;
+            key-positions = <7 16>;
+        };
+
+        more {
+            bindings = <&kp GT>;
+            key-positions = <6 17>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <16 9>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <16 5>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <6 28>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCL>;
+            key-positions = <1 2 13>;
+        };
+
+        question {
+            bindings = <&kp QMARK>;
+            key-positions = <11 12 3>;
+        };
+
+        money {
+            bindings = <&kp DOLLAR>;
+            key-positions = <22 21 3>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <4 13 12>;
+        };
+
+        and {
+            bindings = <&kp AMPS>;
+            key-positions = <14 12>;
+        };
+
+        star {
+            bindings = <&kp STAR>;
+            key-positions = <24 23 22>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <4 3 2>;
+        };
+    };
+
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
