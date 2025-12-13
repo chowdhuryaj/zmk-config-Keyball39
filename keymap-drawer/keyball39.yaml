@@ -37,8 +37,8 @@ layers:
   - {t: '$$mdi:backspace$$', h: SNIPE}
   - {t: R, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&lt 1'
-  - '&lt 2'
+  - {t: NUM, h: toggle}
+  - {t: SYM, h: toggle}
   - FUN
   NUM:
   - '1'
