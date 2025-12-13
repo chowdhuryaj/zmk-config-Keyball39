@@ -39,7 +39,7 @@ layers:
   - {t: '$$mdi:arrow-down-bold$$', h: SCROLL}
   - {t: '$$mdi:arrow-left-bold$$', h: NUM}
   - {t: '$$mdi:arrow-right-bold$$', h: SYM}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   NUM:
   - '1'
   - '2'
