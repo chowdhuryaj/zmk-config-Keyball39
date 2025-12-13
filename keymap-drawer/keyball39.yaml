@@ -35,8 +35,8 @@ layers:
   - {t: ., h: ;}
   - {t: /, h: '''', s: '?'}
   - {t: '$$mdi:backspace$$', h: SNIPE}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
-  - {t: R, h: SCROLL}
+  - {t: '$$mdi:keyboard-space$$', h: SCROLL}
+  - {t: R, h: MOUSE}
   - {t: A, h: NUM}
   - {t: E, h: SYM}
   - FUN
@@ -195,8 +195,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - FUN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -235,8 +235,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
