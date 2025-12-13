@@ -6,7 +6,7 @@ layers:
   - L
   - K
   - Q
-  - G
+  - X
   - Y
   - O
   - U
@@ -21,7 +21,7 @@ layers:
   - I
   - A
   - E
-  - {t: X, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: G, h: '$$mdi:apple-keyboard-control$$'}
   - V
   - J
   - D
