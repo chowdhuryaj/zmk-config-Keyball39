@@ -5,7 +5,7 @@ layers:
   - F
   - L
   - K
-  - P
+  - Q
   - G
   - Y
   - O
@@ -37,7 +37,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: SNIPE}
   - {t: R, h: MOUSE}
   - {t: LGUI, h: SCROLL}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
   - {t: SPC, h: SYM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   NUM:
