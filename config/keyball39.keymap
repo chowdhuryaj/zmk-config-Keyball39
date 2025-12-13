@@ -13,13 +13,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
-    tapping-term-ms = <220>;
+    tapping-term-ms = <180>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
 
 &mt {
-    tapping-term-ms = <190>;
+    tapping-term-ms = <180>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
 };
@@ -79,10 +79,10 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B      &kp F         &kp L     &kp K         &kp Q                                    &kp P            &kp Y  &kp O      &kp U    &kp SQT
-&mt LGUI N      &kp S         &kp H     &kp T         &kp M                                    &kp W            &kp C  &kp I      &kp UP    &kp SQT
-&mt LSHFT X     &kp V         &kp J     &kp D         &kp Z                                    &kp G            &kp G  &kp LEFT  &kp DOWN  &kp RIGHT
-&mt LCTRL COMMA &mt SEMI PERIOD &slash_or_paren 0 SLASH     &lt 6 BSPC    &lt 4 SPACE  &lt 5 R        &lt 1 A  &lt 2 E                                         &kp RSHFT
+&mt LALT B      &kp F         &kp L     &kp K         &kp Q                                    &kp P       &kp Y  &kp O      &kp U    &kp SQT
+&mt LGUI N      &kp S         &kp H     &kp T         &kp M                                    &kp W       &kp C  &kp I     &kp UP    &kp SEMICOLON
+&mt LSHFT X     &kp V         &kp J     &kp D         &kp Z                                    &paren_in   &kp G  &kp LEFT  &kp DOWN  &kp RIGHT
+&mt LCTRL COMMA &mt SEMI PERIOD &slash_or_paren 0 SLASH     &lt 6 BSPC    &lt 4 SPACE    &lt 5 R &lt 1 A  &lt 2 E                     &kp RSHFT
             >;
         };
 
@@ -120,8 +120,8 @@ macros {
             label = "MOUSE";
             bindings = <
 &kp N1          &kp N2          &kp N3        &kp N4     &kp N5                  &kp N6         &kp N7     &kp N8  &kp N9     &kp N0
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none                   &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK
-&none           &none           &none         &none      &none                   &kp PAGE_DOWN  &none      &none   &none      &none
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none                   &kp PAGE_UP    &mkp LCLK  &mkp MCLK   &mkp RCLK  &none
+&kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT  &none                   &kp PAGE_DOWN  &mkp MB4   &mkp MB5    &none      &none
 &none           &trans          &trans        &trans     &trans  &trans  &trans  &mo 3                                        &none
             >;
         };
