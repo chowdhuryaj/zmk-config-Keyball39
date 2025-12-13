@@ -158,9 +158,9 @@ macros {
             label = "BASE";
             bindings = <
 &kp B  &kp F  &kp L     &kp K         &kp P                         &kp G       &kp Y       &kp O       &kp U        &kp P
-&kp N  &kp S  &kp H     &kp T         &kp M                         &kp W       &kp C       &kp I       &kp E        &kp A
+&kp N  &kp S  &kp H     &kp T         &kp M                         &kp W       &kp C       &kp I       &kp A        &kp E
 &kp X  &kp V  &kp J     &kp D         &kp Z                         &kp SEMI    &kp COMMA   &kp PERIOD  &kp SLASH    &kp SQT
-&mo 6  &sk LCTRL  &sk LALT  &mt LGUI BSPC &mt LSHFT SPC &lt 5 R   &lt 1 ENTER &lt 2  DEL                             &mo 4
+&sk LCTRL  &sk LALT     &sk LGUI  &lt 4 BSPC &mt LSHFT SPC &lt 5 R   &lt 1 ENTER &lt 2  DEL                          &sk LSHFT
             >;
 };
 
