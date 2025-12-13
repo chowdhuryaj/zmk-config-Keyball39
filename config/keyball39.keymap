@@ -35,7 +35,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <11 12 13>;
+            key-positions = <12 13>;
         };
 
         tab {
@@ -48,16 +48,6 @@
             key-positions = <10 11>;
         };
 
-        pg_up {
-            bindings = <&kp PG_UP>;
-            key-positions = <15 18>;
-        };
-
-        pg_dn {
-            bindings = <&kp PG_DN>;
-            key-positions = <25 28>;
-        };
-
         space {
             bindings = <&kp SPACE>;
             key-positions = <34 13>;
@@ -66,36 +56,6 @@
         bspc {
             bindings = <&kp BSPC>;
             key-positions = <34 12>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <16 15>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <5 6>;
-        };
-
-        lbrac {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <36 6>;
-        };
-
-        rbrac {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <36 7>;
-        };
-
-        lparen {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <36 16>;
-        };
-
-        rparen {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <36 17>;
         };
 
         exclamation {
