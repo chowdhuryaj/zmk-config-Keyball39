@@ -24,8 +24,6 @@
     quick-tap-ms = <150>;
 };
 
-&caps_word { continue-list = <UNDERSCORE MINUS>; };
-
 / {
 
     behaviors {
@@ -294,8 +292,8 @@ macros {
             label = "FUN";
             bindings = <
 &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP            &kp C_BRI_UP   &studio_unlock  &sys_reset  &bootloader  &none
-&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN            &kp C_BRI_DN   &bt BT_CLR         &none       &none        &none
-&kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE              &kp C_PP       &EP_TOG         &none       &none        &none
+&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN            &kp C_BRI_DN   &bt BT_CLR      &none       &none        &none
+&kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE              &kp C_PP       &none           &none       &none        &none
 &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
             >;
         };
