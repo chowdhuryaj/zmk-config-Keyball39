@@ -186,7 +186,8 @@ macros {
 &kp A     &kp S        &kp H         &kp T      &kp M                         &key_repeat &kp I       &kp E      &kp A        &kp G
 &kp J     &kp C        &kp V         &kp D      &kp Z                         &kp SEMI &kp COMMA     &kp PERIOD  &kp SLASH    &kp SQT
 &sk LSHFT &sk LCTRL    &sk LALT      &mt LGUI E &mt UP R &lt 5 DOWN       &mt LEFT N &mt RIGHT SPACE                          &tog 4
-        };
+            >;
+};
 
         number_layer {
             label = "NUM";
