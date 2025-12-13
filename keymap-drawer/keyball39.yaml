@@ -8,9 +8,9 @@ layers:
   - Q
   - P
   - Y
-  - I
   - O
   - U
+  - {t: '''', s: '"'}
   - {t: N, h: LGUI}
   - S
   - H
@@ -31,9 +31,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
-  - {t: ',', s: '?'}
-  - {t: ., s: ;}
+  - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
+  - {t: ., h: ;}
+  - {t: /, h: '&paren_in', s: '?'}
   - {t: '$$mdi:backspace$$', h: SNIPE}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: R, h: SCROLL}
