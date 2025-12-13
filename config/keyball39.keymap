@@ -13,7 +13,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
-    tapping-term-ms = <180>;
+    tapping-term-ms = <165>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -167,9 +167,9 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B    &kp F           &kp L         &kp K      &kp Q                         &kp G      &kp Y      &kp O       &kp U        &kp P
+&mt LALT B    &kp F           &kp L         &kp K      &kp Q                         &kp X      &kp Y      &kp O       &kp U        &kp P
 &mt LGUI N    &kp S           &kp H         &kp T      &kp M                         &kp W      &kp C      &kp I       &kp A        &kp E
-&mt LCTRL X   &kp V           &kp J         &kp D      &kp Z                         &kp SEMI &kp COMMA  &kp PERIOD  &kp SLASH    &kp SQT
+&mt LCTRL G   &kp V           &kp J         &kp D      &kp Z                         &kp SEMI &kp COMMA  &kp PERIOD  &kp SLASH    &kp SQT
 &sk LSHFT     &kp DEL         &kp BSPC      &lt 6 UP   &lt 4 R &lt 5 DOWN            &lt 1 LEFT  &lt 2 RIGHT                              &sk RSHFT
             >;
         };
