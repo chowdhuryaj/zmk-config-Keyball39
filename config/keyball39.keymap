@@ -157,6 +157,21 @@
             bindings = <&key_repeat>;
             key-positions = <34 37>;
         };
+
+        mouse {
+            bindings = <&tog 4>;
+            key-positions = <33 23 22 21 20>;
+        };
+
+        scroll {
+            bindings = <&tog 5>;
+            key-positions = <33 23 22 21 20>;
+        };
+
+        snipe {
+            bindings = <&tog 6>;
+            key-positions = <33 10>;
+        };
     };
 
 macros {
@@ -167,11 +182,10 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B    &kp F           &kp L         &kp K      &kp Q                         &kp X      &kp Y      &kp O       &kp U        &kp P
-&mt LGUI N    &kp S           &kp H         &kp T      &kp M                         &kp W      &kp C      &kp I       &kp A        &kp E
-&mt LCTRL G   &kp V           &kp J         &kp D      &kp Z                         &kp SEMI &kp COMMA  &kp PERIOD  &kp SLASH    &kp SQT
-&sk LSHFT     &kp DEL         &kp BSPC      &lt 6 UP   &lt 4 R &lt 5 DOWN            &lt 1 LEFT  &lt 2 RIGHT                              &sk RSHFT
-            >;
+&kp B     &kp F        &kp L         &kp K      &kp P                         &kp X      &kp Y       &kp O       &kp U        &kp Q
+&kp A     &kp S        &kp H         &kp T      &kp M                         &key_repeat &kp I       &kp E      &kp A        &kp G
+&kp J     &kp C        &kp V         &kp D      &kp Z                         &kp SEMI &kp COMMA     &kp PERIOD  &kp SLASH    &kp SQT
+&sk LSHFT &sk LCTRL    &sk LALT      &mt LGUI E &mt UP R &lt 5 DOWN       &mt LEFT N &mt RIGHT SPACE                          &tog 4
         };
 
         number_layer {
