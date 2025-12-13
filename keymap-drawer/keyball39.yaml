@@ -6,34 +6,34 @@ layers:
   - L
   - K
   - Q
-  - P
+  - G
   - Y
   - O
   - U
-  - {t: '''', s: '"'}
+  - P
   - {t: N, h: LGUI}
   - S
   - H
   - T
   - M
   - W
-  - C
-  - I
-  - $$mdi:arrow-up-bold$$
-  - {t: ;, s: ':'}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click-outline$$
+  - PGUP
   - {t: X, h: '$$mdi:apple-keyboard-shift$$'}
   - V
   - J
   - D
   - Z
-  - '&paren_in'
-  - G
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - C
+  - I
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - PGDN
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: ;}
-  - {t: /, h: '&paren_in', s: '?'}
+  - {t: /, h: '''', s: '?'}
   - {t: '$$mdi:backspace$$', h: SNIPE}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: R, h: SCROLL}
@@ -137,7 +137,7 @@ layers:
   - F8
   - $$mdi:volume-low$$
   - $$mdi:brightness-7$$
-  - '&BT_CLR'
+  - $$mdi:bluetooth-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
