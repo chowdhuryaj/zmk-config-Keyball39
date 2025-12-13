@@ -1,29 +1,29 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   BASE:
-  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
+  - B
   - F
   - L
   - K
-  - Q
+  - P
   - X
   - Y
   - O
   - U
-  - P
-  - {t: N, h: LGUI}
+  - Q
+  - A
   - S
   - H
   - T
   - M
-  - W
-  - C
+  - '&key_repeat'
   - I
-  - A
   - E
-  - {t: G, h: '$$mdi:apple-keyboard-control$$'}
-  - V
+  - A
+  - G
   - J
+  - C
+  - V
   - D
   - Z
   - {t: ;, s: ':'}
@@ -32,14 +32,14 @@ layers:
   - {t: /, s: '?'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:arrow-up-bold$$', h: SNIPE}
-  - {t: R, h: MOUSE}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: E, h: LGUI}
+  - {t: R, h: '$$mdi:arrow-up-bold$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: SCROLL}
-  - {t: '$$mdi:arrow-left-bold$$', h: NUM}
-  - {t: '$$mdi:arrow-right-bold$$', h: SYM}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: N, h: '$$mdi:arrow-left-bold$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:arrow-right-bold$$'}
+  - {t: MOUSE, h: toggle}
   NUM:
   - '1'
   - '2'
@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
@@ -118,7 +118,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
   - F1
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - FUN
@@ -274,7 +274,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -333,3 +333,9 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [34, 37]
   k: '&key_repeat'
+- p: [33, 23, 22, 21, 20]
+  k: {t: MOUSE, h: toggle}
+- p: [33, 23, 22, 21, 20]
+  k: {t: SCROLL, h: toggle}
+- p: [33, 10]
+  k: {t: SNIPE, h: toggle}
