@@ -170,7 +170,7 @@ macros {
 &mt LALT B    &kp F           &kp L         &kp K      &kp Q                         &kp G      &kp Y      &kp O       &kp U        &kp P
 &mt LGUI N    &kp S           &kp H         &kp T      &kp M                         &kp W      &kp C      &kp I       &kp A        &kp E
 &mt LCTRL X   &kp V           &kp J         &kp D      &kp Z                         &kp SEMI &kp COMMA  &kp PERIOD  &kp SLASH    &kp SQT
-&sk LSHFT     &kp DEL         &kp BSPC      &lt 6 UP   &lt 4 R &lt 5 DOWN   &lt 1 LEFT  &lt 2 RIGHT                         &kp RSHFT
+&sk LSHFT     &kp DEL         &kp BSPC      &lt 6 UP   &lt 4 R &lt 5 DOWN            &lt 1 LEFT  &lt 2 RIGHT                              &sk RSHFT
             >;
         };
 
