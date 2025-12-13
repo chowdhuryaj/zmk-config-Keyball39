@@ -323,8 +323,6 @@ combos:
   k: '!'
 - p: [16, 7, 8]
   k: '?'
-- p: [26, 37, 27]
-  k: {t: SCROLL, h: toggle}
 - p: [33, 23]
   k: {t: NUM, h: toggle}
 - p: [33, 23, 22]
