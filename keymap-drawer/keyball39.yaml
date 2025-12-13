@@ -21,25 +21,25 @@ layers:
   - I
   - A
   - E
-  - {t: X, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: X, h: '$$mdi:apple-keyboard-control$$'}
   - V
   - J
   - D
   - Z
-  - {t: ;, h: MOUSE, s: ':'}
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:arrow-up-bold$$
-  - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
+  - {t: ;, s: ':'}
+  - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
-  - {t: '$$mdi:backspace$$', h: SNIPE}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: R, h: SCROLL}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
   - {t: '''', s: '"'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:arrow-up-bold$$', h: SNIPE}
+  - {t: R, h: MOUSE}
+  - {t: '$$mdi:arrow-down-bold$$', h: SCROLL}
+  - {t: '$$mdi:arrow-left-bold$$', h: NUM}
+  - {t: '$$mdi:arrow-right-bold$$', h: SYM}
+  - $$mdi:apple-keyboard-shift$$
   NUM:
   - '1'
   - '2'
@@ -186,7 +186,7 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: PgDn, type: held}
+  - PgDn
   - '&mkp MB4'
   - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - FUN
@@ -289,10 +289,6 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [10, 11]
   k: $$mdi:keyboard-tab-reverse$$
-- p: [6, 7, 8]
-  k: HOME
-- p: [7, 8, 9]
-  k: END
 - p: [15, 18]
   k: PG UP
 - p: [25, 28]
@@ -311,24 +307,8 @@ combos:
   k: $$mdi:keyboard-space$$
 - p: [34, 12]
   k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [18, 19]
-  k: .
-- p: [18, 19, 16]
-  k: ':'
-- p: [18, 16, 17]
-  k: {t: ;, s: ':'}
-- p: [18, 17]
-  k: {t: ',', s: <}
-- p: [7, 18]
-  k: .
-- p: [6, 18]
-  k: '"'
-- p: [25, 26]
-  k: _
 - p: [16, 15]
   k: {t: '-', s: _}
-- p: [16, 15, 17]
-  k: +
 - p: [5, 6]
   k: {t: '=', s: +}
 - p: [36, 6]
@@ -339,35 +319,17 @@ combos:
   k: (
 - p: [36, 17]
   k: )
-- p: [26, 17, 8]
-  k: {t: /, s: '?'}
-- p: [6, 17, 28]
-  k: {t: \, s: '|'}
-- p: [16, 7, 18]
-  k: ^
-- p: [7, 16]
-  k: <
-- p: [6, 17]
-  k: '>'
-- p: [16, 9]
-  k: '~'
-- p: [16, 5]
-  k: {t: '`', s: '~'}
-- p: [6, 28]
-  k: '%'
 - p: [1, 2, 13]
   k: '!'
-- p: [11, 12, 3]
+- p: [16, 7, 8]
   k: '?'
-- p: [22, 21, 3]
-  k: $
-- p: [4, 13, 12]
-  k: '@'
-- p: [14, 12]
-  k: '&'
-- p: [24, 23, 22]
-  k: '*'
-- p: [4, 3, 2]
-  k: '#'
 - p: [26, 37, 27]
   k: {t: SCROLL, h: toggle}
+- p: [33, 23]
+  k: {t: NUM, h: toggle}
+- p: [33, 23, 22]
+  k: {t: SYM, h: toggle}
+- p: [21, 22, 23, 33]
+  k: {t: FUN, h: toggle}
+- p: [34, 14]
+  k: $$mdi:backspace-reverse-outline$$
