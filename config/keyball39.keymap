@@ -79,10 +79,10 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&mt LALT B      &kp F         &kp L     &kp K         &kp Q                                    &kp P       &kp Y  &kp O      &kp U    &kp SQT
-&mt LGUI N      &kp S         &kp H     &kp T         &kp M                                    &kp W       &kp C  &kp I     &kp UP    &kp SEMICOLON
-&mt LSHFT X     &kp V         &kp J     &kp D         &kp Z                                    &paren_in   &kp G  &kp LEFT  &kp DOWN  &kp RIGHT
-&mt LCTRL COMMA &mt SEMI PERIOD &slash_or_paren 0 SLASH     &lt 6 BSPC    &lt 4 SPACE    &lt 5 R &lt 1 A  &lt 2 E                     &MO 3
+&mt LALT B      &kp F           &kp L         &kp K         &kp Q                         &kp G   &kp Y      &kp O       &kp U        &kp P
+&mt LGUI N      &kp S           &kp H         &kp T         &kp M                         &kp W   &mkp LCLK  &mkp MCLK   &mkp RCLK    &kp PGUP
+&mt LSHFT X     &kp V           &kp J         &kp D         &kp Z                         &kp C   &kp I      &mkp MB4    &mkp MB5     &kp PGDN
+&mt LCTRL COMMA &mt SEMI PERIOD &mt SQT SLASH &lt 6 BSPC    &lt 4 SPACE &lt 5 R  &lt 1 A  &lt 2 E                     &MO 3
             >;
         };
 
@@ -110,7 +110,7 @@ macros {
             label = "FUN";
             bindings = <
 &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP            &kp C_BRI_UP   &studio_unlock  &sys_reset  &bootloader  &none
-&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN            &kp C_BRI_DN   &BT_CLR         &none       &none        &none
+&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN            &kp C_BRI_DN   &bt BT_CLR         &none       &none        &none
 &kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE              &kp C_PP       &EP_TOG         &none       &none        &none
 &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
             >;
