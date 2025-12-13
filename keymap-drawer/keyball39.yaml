@@ -283,32 +283,16 @@ layers:
 combos:
 - p: [11, 10, 12]
   k: $$mdi:keyboard-esc$$
-- p: [11, 12, 13]
+- p: [12, 13]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
 - p: [10, 11]
   k: $$mdi:keyboard-tab-reverse$$
-- p: [15, 18]
-  k: PG UP
-- p: [25, 28]
-  k: PG DN
 - p: [34, 13]
   k: $$mdi:keyboard-space$$
 - p: [34, 12]
   k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [16, 15]
-  k: {t: '-', s: _}
-- p: [5, 6]
-  k: {t: '=', s: +}
-- p: [36, 6]
-  k: {t: '[', s: '{'}
-- p: [36, 7]
-  k: {t: ']', s: '}'}
-- p: [36, 16]
-  k: (
-- p: [36, 17]
-  k: )
 - p: [1, 2, 13]
   k: '!'
 - p: [16, 7, 8]
