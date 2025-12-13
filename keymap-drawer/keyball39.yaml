@@ -331,3 +331,5 @@ combos:
   k: {t: FUN, h: toggle}
 - p: [34, 14]
   k: $$mdi:backspace-reverse-outline$$
+- p: [34, 37]
+  k: '&key_repeat'
