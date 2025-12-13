@@ -251,6 +251,11 @@
             bindings = <&kp HASH>;
             key-positions = <4 3 2>;
         };
+
+        scroll {
+            bindings = <&tog 5>;
+            key-positions = <26 37 27>;
+        };
     };
 
 macros {
