@@ -35,7 +35,7 @@ behaviors {
 
         /* Either shift triggers Delete */
         mods = <(MOD_LSFT | MOD_RSFT)>;
-    };,
+    };
     kr_mo1: kr_mo1 {
         compatible = "zmk,behavior-hold-tap";
         label = "KR_MO1";
