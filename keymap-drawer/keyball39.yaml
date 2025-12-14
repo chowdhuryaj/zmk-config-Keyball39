@@ -36,7 +36,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: R, h: MOUSE}
-  - SNIPE
+  - {t: '$$mdi:keyboard-space$$', h: SNIPE}
   - {t: '&key_repeat', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: FUN, h: '$$mdi:gesture-tap-hold$$'}
@@ -281,23 +281,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [11, 10, 12]
-  k: $$mdi:keyboard-esc$$
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [11, 12]
-  k: $$mdi:keyboard-tab$$
-- p: [10, 11]
-  k: $$mdi:keyboard-tab-reverse$$
-- p: [34, 13]
-  k: $$mdi:keyboard-space$$
-- p: [34, 12]
-  k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [1, 2, 13]
   k: '!'
 - p: [16, 7, 8]
   k: '?'
-- p: [34, 14]
-  k: $$mdi:backspace-reverse-outline$$
 - p: [34, 37]
   k: {t: BASE, h: toggle}
