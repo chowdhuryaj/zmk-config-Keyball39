@@ -57,34 +57,9 @@ kr_mo1: kr_mo1 {
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <11 10 12>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <12 13>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        backtab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <10 11>;
-        };
-
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <34 13>;
-        };
-
-        bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <34 12>;
         };
 
         exclamation {
@@ -95,11 +70,6 @@ kr_mo1: kr_mo1 {
         question {
             bindings = <&kp QMARK>;
             key-positions = <16 7 8>;
-        };
-
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <34 14>;
         };
 
         eject {
@@ -120,7 +90,7 @@ macros {
 &kp V       &kp W       &kp G      &kp M         &kp J                        &kp SEMI &kp COMMA   &kp DOT       &kp SQT        &kp SLASH
 &mt LALT S  &mt LCTRL N &mt LGUI T &mt LSHFT H   &kp K                        &kp A    &mt RSHFT E &mt RGUI I    &mt RCTRL C    &mt RALT Q
 &kp F       &kp P       &kp D      &kp L         &kp X                        &kp U    &kp O       &kp Y         &kp B          &kp ENTER
-&kp ESC     &kp LS(TAB) &kp TAB    &bspc_del     &lt 4 R &mo 6   &kr_mo1 1 0  &lt 2 SPACE                                       &sl 3
+&kp ESC     &kp LS(TAB) &kp TAB    &bspc_del     &lt 4 R &lt 6 SPACE  &kr_mo1 1 0  &lt 2 SPACE                                       &sl 3
             >;
 };
 
