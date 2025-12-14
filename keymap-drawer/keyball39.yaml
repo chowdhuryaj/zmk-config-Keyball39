@@ -11,16 +11,16 @@ layers:
   - O
   - U
   - P
-  - N
-  - S
-  - H
+  - {t: N, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: H, h: LGUI}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - M
   - W
   - {t: C, h: '$$mdi:apple-keyboard-shift$$'}
-  - A
-  - E
-  - I
+  - {t: A, h: LGUI}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - X
   - V
   - J
