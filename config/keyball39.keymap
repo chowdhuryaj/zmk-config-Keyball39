@@ -24,7 +24,10 @@
     quick-tap-ms = <150>;
 };
 
-behaviors {
+/ 
+    {
+    behaviors {
+
     bspc_del: bspc_del {
         compatible = "zmk,behavior-mod-morph";
         label = "BSPC_DEL";
@@ -48,10 +51,10 @@ behaviors {
         /* order: HOLD, then TAP */
         bindings = <&mo 1>, <&key_repeat>;
     };
+
 };
 
-
-/ {
+    {
     combos {
         compatible = "zmk,combos";
 
