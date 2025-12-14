@@ -24,8 +24,7 @@
     quick-tap-ms = <150>;
 };
 
-/ 
-    {
+/ {
     behaviors {
 
     bspc_del: bspc_del {
@@ -39,22 +38,22 @@
         /* Either shift triggers Delete */
         mods = <(MOD_LSFT | MOD_RSFT)>;
     };
-    kr_mo1: kr_mo1 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "KR_MO1";
-        #binding-cells = <0>;
 
-        flavor = "tap-preferred";
-        tapping-term-ms = <180>;
-        quick-tap-ms = <150>;
+kr_mo1: kr_mo1 {
+    compatible = "zmk,behavior-hold-tap";
+    label = "KR_MO1";
+    #binding-cells = <2>;
 
-        /* order: HOLD, then TAP */
-        bindings = <&mo 1>, <&key_repeat>;
-    };
+    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
+    quick-tap-ms = <150>;
+
+    /* order: HOLD, then TAP */
+    bindings = <&mo>, <&key_repeat>;
+};
 
 };
 
-    {
     combos {
         compatible = "zmk,combos";
 
@@ -121,17 +120,17 @@ macros {
 &kp V       &kp W       &kp G      &kp M         &kp J                        &kp SEMI &kp COMMA   &kp DOT       &kp SQT        &kp SLASH
 &mt LALT S  &mt LCTRL N &mt LGUI T &mt LSHFT H   &kp K                        &kp A    &mt RSHFT E &mt RGUI I    &mt RCTRL C    &mt RALT Q
 &kp F       &kp P       &kp D      &kp L         &kp X                        &kp U    &kp O       &kp Y         &kp B          &kp ENTER
-&kp ESC     &kp LS(TAB) &kp TAB    &bspc_del     &lt 4 R &mo 6     &kr_mo1    &lt 2 SPACE                                       &mo 3
+&kp ESC     &kp LS(TAB) &kp TAB    &bspc_del     &lt 4 R &mo 6   &kr_mo1 1 0  &lt 2 SPACE                                       &sl 3
             >;
 };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT        &none              &none      &kp LSHFT     &kp LGUI      &kp LALT      &kp LCTRL
-&trans        &trans         &trans    &trans   &trans             &trans  &trans  &trans                                          &trans
+&kp N1    &kp N2     &kp N3    &kp N4     &kp N5          &kp N1  &kp N2     &kp N3    &kp N4    &kp N5
+&kp N6    &kp N7     &kp N8    &kp N9     &kp N0          &kp N6  &kp N7     &kp N8    &kp N9    &kp N0
+&kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &none           &none   &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL
+&trans    &trans     &trans    &trans     &trans  &trans  &trans                                 &trans                                    &trans
             >;
         };
 
@@ -148,20 +147,20 @@ macros {
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOL_UP            &kp C_BRI_UP   &studio_unlock  &sys_reset  &bootloader  &none
-&kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOL_DN            &kp C_BRI_DN   &bt BT_CLR      &none       &none        &none
-&kp F9  &kp F10  &kp F11  &kp F12  &kp C_MUTE              &kp C_PP       &none           &none       &none        &none
-&trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &kp LALT                &kp LS(LALT)   &studio_unlock  &sys_reset  &bootloader  &none
+&kp F5  &kp F6   &kp F7   &kp F8   &kp LSHFT               &kp LGUI       &bt BT_CLR      &none       &none        &none
+&kp F9  &kp F10  &kp F11  &kp F12  &kp LCTRL               &kp LS(LCTRL)  &none           &none       &none        &none
+&kp F13 &kp F14  &kp F16  &trans   &trans  &trans  &trans  &trans                                                  &trans
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp N1          &kp N2          &kp N3        &kp N4     &kp N5                  &kp N6         &kp N7     &kp N8  &kp N9     &kp N0
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none                   &msc SCRL_UP    &mkp LCLK  &mkp MCLK   &mkp RCLK  &none
-&kp LCTRL       &kp LALT        &kp LGUI      &kp LSHFT  &none                   &msc SCRL_DOWN  &mkp MB4   &mkp MB5    &none      &none
-&none           &trans          &trans        &mo 6      &mo 5   &trans  &trans  &mo 3                                        &none
+&kp ESC     &kp HOME     &kp UP    &kp END    &kp ENTER              &kp PG_UP       &mo 5      &msc SCRL_UP    &mo 6      &none
+&kp LS(TAB) &kp LEFT     &kp DOWN  &kp RIGHT  &kp TAB                &msc SCRL_LEFT  &mkp LCLK  &mkp MCLK       &mkp RCLK  &msc SCRL_RIGHT
+&sk LALT    &sk LCTRL    &sk LGUI  &sk LSHFT  &sk LS(LALT)           &kp PG_DN       &mkp MB4   &msc SCRL_DOWN  &mkp MB5   &none
+&none       &none        &none     &mo 6      &mo 5           &trans &trans                                                &mo 3
             >;
         };
 
