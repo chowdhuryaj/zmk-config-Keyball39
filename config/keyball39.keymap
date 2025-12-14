@@ -24,6 +24,33 @@
     quick-tap-ms = <150>;
 };
 
+behaviors {
+    bspc_del: bspc_del {
+        compatible = "zmk,behavior-mod-morph";
+        label = "BSPC_DEL";
+        #binding-cells = <0>;
+
+        /* Normal → Shift-modified */
+        bindings = <&kp BSPC>, <&kp DEL>;
+
+        /* Either shift triggers Delete */
+        mods = <(MOD_LSFT | MOD_RSFT)>;
+    };,
+    kr_mo1: kr_mo1 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "KR_MO1";
+        #binding-cells = <0>;
+
+        flavor = "tap-preferred";
+        tapping-term-ms = <180>;
+        quick-tap-ms = <150>;
+
+        /* order: HOLD, then TAP */
+        bindings = <&mo 1>, <&key_repeat>;
+    };
+};
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -73,8 +100,8 @@
             key-positions = <34 14>;
         };
 
-        rep {
-            bindings = <&key_repeat>;
+        eject {
+            bindings = <&tog 0>;
             key-positions = <34 37>;
         };
 
@@ -88,10 +115,10 @@ macros {
         default_layer {
             label = "BASE";
             bindings = <
-&kp B  &kp F  &kp L     &kp K         &kp Q                         &kp G       &kp Y       &kp O       &kp U        &kp P
-&mt LALT N  &mt LCTRL S  &mt LGUI H     &mt LSHFT T   &kp M         &kp W       &mt LSHFT C &mt LGUI A    &mt LCTRL E        &mt LALT I
-&kp X  &kp V  &kp J     &kp D         &kp Z                         &kp SEMI    &kp COMMA   &kp PERIOD  &kp SLASH    &kp SQT
-&sk LCTRL  &sk LALT     &sk LGUI  &lt 6 BSPC &lt 4 R &lt 5 LGUI   &lt 1 DEL   &lt 2 SPC                          &sk LSHFT
+&kp V       &kp W       &kp G      &kp M         &kp J                        &kp SEMI &kp COMMA   &kp DOT       &kp SQT        &kp SLASH
+&mt LALT S  &mt LCTRL N &mt LGUI T &mt LSHFT H   &kp K                        &kp A    &mt RSHFT E &mt RGUI I    &mt RCTRL C    &mt RALT Q
+&kp F       &kp P       &kp D      &kp L         &kp X                        &kp U    &kp O       &kp Y         &kp B          &kp ENTER
+&kp ESC     &kp LS(TAB) &kp TAB    &bspc_del     &lt 4 R &mo 6     &kr_mo1    &lt 2 SPACE                                       &mo 3
             >;
 };
 
