@@ -157,10 +157,10 @@ macros {
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp ESC     &kp HOME     &kp UP    &kp END    &kp ENTER              &kp PG_UP       &mo 5      &msc SCRL_UP    &mo 6      &none
-&kp LS(TAB) &kp LEFT     &kp DOWN  &kp RIGHT  &kp TAB                &msc SCRL_LEFT  &mkp LCLK  &mkp MCLK       &mkp RCLK  &msc SCRL_RIGHT
-&sk LALT    &sk LCTRL    &sk LGUI  &sk LSHFT  &sk LS(LALT)           &kp PG_DN       &mkp MB4   &msc SCRL_DOWN  &mkp MB5   &none
-&none       &none        &none     &mo 6      &mo 5           &trans &trans                                                &mo 3
+&kp ESC     &kp HOME     &kp UP    &kp END    &kp ENTER                       &kp PG_UP       &mo 5      &msc SCRL_UP    &mo 6      &none
+&kp LS(TAB) &kp LEFT     &kp DOWN  &kp RIGHT  &kp TAB                         &msc SCRL_LEFT  &mkp LCLK  &mkp MCLK       &mkp RCLK  &msc SCRL_RIGHT
+&sk LALT    &sk LCTRL    &sk LGUI  &sk LSHFT  &sk LS(LALT)                    &kp PG_DN       &mkp MB4   &msc SCRL_DOWN  &mkp MB5   &none
+&none       &none        &none     &trans     &mo 5  &trans            &trans &trans                                                &mo 3
             >;
         };
 
